@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import logo from '../assets/astro.svg';
+import siteLogo from '../assets/images/acil-emlak-sat-logo.svg'; // YENİ LOGONUZUN YOLU
+
 interface Props {
     variant?: 'header' | 'footer' | 'dark';
 }
@@ -8,13 +9,14 @@ interface Props {
 const { variant = 'header' } = Astro.props;
 
 // Determine the appropriate CSS class based on the variant
+// Bu kısım şimdilik aynı kalabilir, gerekirse daha sonra renkleri ayarlarız.
 const getLogoClass = () => {
     switch (variant) {
         case 'header':
-            return 'text-header-logo hover:text-primary';
+            return 'text-header-logo hover:text-primary'; // Temanın renk değişkenlerini kullanır
         case 'footer':
-            return 'text-footer-logo hover:text-primary';
-        case 'dark':
+            return 'text-footer-logo hover:text-primary'; // Temanın renk değişkenlerini kullanır
+        case 'dark': // Bu variant temada tanımlı olmayabilir, genel bir fallback
             return 'text-body-base hover:text-primary';
         default:
             return 'text-body-base hover:text-primary';
@@ -22,12 +24,12 @@ const getLogoClass = () => {
 };
 ---
 
-<a href="/" class:list={['logo uppercase font-logo transition-colors duration-200 font-light', getLogoClass()]}>
-    {
-        // If image is the only element in this link, its alt attribute should be a textual representation.
-        // Please, use something like your company name or “Home”, not “logo.”
-        // If there is link text, leave alt empty.
-    }
-    <Image src={logo} alt="" class="hidden" />
-    <span class="font-bold">Titan</span> Core
+<a href="/" class:list={['logo transition-colors duration-200 flex items-center', getLogoClass()]}>
+    <Image 
+        src={siteLogo} 
+        alt="Acil Emlak Sat Logosu" 
+        class="h-10 w-auto" {/* Yüksekliği (h-10) logonuzun boyutuna göre ayarlayın */}
+    />
+    {/* Eğer logonuzda metin yoksa ve ayrıca metin eklemek istemiyorsanız, aşağıdaki span'ları silebilirsiniz. */}
+    {/* <span class="font-logo uppercase font-light ml-2"><span class="font-bold">Acil</span> Emlak Sat</span> */}
 </a>
