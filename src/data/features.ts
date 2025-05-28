@@ -19,37 +19,37 @@ export const featureLists: Record<string, FeatureList> = {
     main: {
         id: 'main',
         features: [
-            {
-                icon: Zap,
-                title: 'Lightning Fast Performance',
-                description: 'Optimized for speed and performance'
-            },
-            {
-                icon: Shield,
-                title: 'SEO Optimized Structure',
-                description: 'Built with SEO best practices in mind'
-            },
-            {
-                icon: TabletSmartphone,
-                title: 'Responsive by Default',
-                description: 'Mobile-friendly out of the box'
-            },
-            {
-                icon: Smile,
-                title: 'Easy Customization',
-                description: 'Customize the theme to your liking'
-            },
-            {
-                icon: Type,
-                title: 'TypeScript Support',
-                description: 'Built with TypeScript in mind'
-            },
-            {
-                icon: CodeXml,
-                title: 'Minimal Dependencies',
-                description: 'Keep your project lightweight'
-            }
-        ]
+    {
+        icon: ChartLine, // Piyasa değeri ve analizi için
+        title: 'Hızlı Değerleme',
+        description: 'Piyasa değerini anında öğrenin.'
+    },
+    {
+        icon: CalendarCheck, // Belirlenen süre ve garanti için
+        title: '21 Gün Garanti',
+        description: 'Belirlenen sürede hızlı ve güvenli satış.'
+    },
+    {
+        icon: Handshake, // Güvenilir danışmanlar ve destek için
+        title: 'Uzman Danışmanlar',
+        description: 'Alanında yetkin, güvenilir destek.'
+    },
+    {
+        icon: Checklist, // Süreç takibi ve stresin azalması için
+        title: 'Sıfır Stres',
+        description: 'Evrak ve süreç takibi bize ait.'
+    },
+    {
+        icon: TrendingUp, // Yüksek kazanç ve değer artışı için
+        title: 'Yüksek Kazanç',
+        description: 'Gayrimenkulünüzü değerinde satın.'
+    },
+    {
+        icon: InfoCircle, // Şeffaflık ve bilgilendirme için
+        title: 'Şeffaf Süreç',
+        description: 'Her adımda tam bilgilendirme.'
+    }
+]
     },
     secondary: {
         id: 'secondary',
