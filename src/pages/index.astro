@@ -15,22 +15,22 @@ import RecentPosts from '@components/sections/RecentPosts.astro';
 import heroImage from '../assets/images/home/default-hero-2.jpg';
 import styleGuideImage from '../assets/images/home/developer.jpg';
 
-const seoTitle = "Modern, High-Performance Astro Theme";
-const seoDescription = "A modern, high-performance Astro theme for developer portfolios and documentation sites.";
+const seoTitle = "Acil Emlak & Gayrimenkul Alım Satım Platformu";
+const seoDescription = "Gayrimenkulünüzü hızlı ve karlı bir şekilde satmak için doğru yerdesiniz. AcilEmlakSat.com ile 21 gün içinde değerinde satış yaparak zamandan ve stresten tasarruf edin. Profesyonel destekle.";
 
 const heroContent = {
-    title: 'The Foundation for Beautiful Astro JS Websites',
-    description: 'Titan Core is a minimal, performance-focused Astro JS theme that serves as the perfect foundation for your next web project. Built with clean code and modern best practices, it\'s designed to be extended and customized to your specific needs.',
+    title: 'Stres Yok, Beklemek Yok: Acil Emlak Sat!',
+    description: 'Gayrimenkulünüzü acil satmanız mı gerekiyor? AcilEmlakSat.com ile kolay, güvenli ve hızlı! Uzman ekibimizle maksimum 21 günde, değerinde bir satışla kazançlı çıkın. Beklemeyin, rahat edin!',
     buttons: [
         {
-            text: 'Get Started',
+            text: 'Acil Sat',
             link: '/contact',
             target: '_self'
         },
         {
-            text: 'View on GitHub',
-            link: 'https://github.com/rspisarski/titan-core',
-            target: '_blank'
+            text: 'Ekibimiz',
+            link: '/team',
+            target: '_self'
         }
     ],
     backgroundImage: heroImage,
@@ -38,21 +38,21 @@ const heroContent = {
 }
 
 const featuresSection = {
-    eyebrow: "CORE FEATURES",
-    title: "Everything You Need, Nothing You Don't",
+    eyebrow: "Neden ACILEMLAKSAT.COM?",
+    title: "Emlak satışında aradığınız hız, güven ve yetkinlik.",
     description: "Titan Core gives you a solid foundation with essential features while staying lightweight and customizable. Start with a clean slate and build exactly what you need without the bloat.",
     features: featureLists.main.features,
     button: {
-        text: "View Theme Info",
-        link: "/theme-info",
+        text: "Emlak Yükle",
+        link: "/contact",
         variant: "primary" as const
     }
 }
 
 const FooterCta = {
     eyebrow: "Join The Community",
-    title: ' Start Building With Titan Core Today',
-    description: 'Titan Core is open-source and constantly improving. Join our community of developers to contribute, get support, or showcase what you\'ve built.',
+    title: 'Acil Emlak & Gayrimenkul Alım Satım Platformu',
+    description: 'Gayrimenkulünüzü hızlı ve karlı bir şekilde satmak için doğru yerdesiniz. AcilEmlakSat.com ile 21 gün içinde değerinde satış yaparak zamandan ve stresten tasarruf edin. Profesyonel destekle.',
     hideCta: false,
     button: {
         text: 'Download Titan Core',
@@ -62,16 +62,16 @@ const FooterCta = {
 }
 
 const styleGuideSection = {
-    eyebrow: "Design System",
-    headline: "Consistent & Beautiful Components",
-    description: "Titan Core comes with a complete style guide to ensure your projects maintain visual consistency. From typography to interactive elements, we've carefully crafted each component.",
+    eyebrow: "Yöntemimiz",
+    headline: "Uzman Ekip & Kaliteli Yatırımcı Portföyü",
+    description: "Alanında uzman güvenilir ekibimizin mahareti, eşsiz yatırımcı portföyümüzle birleşir ve size arkanıza yaslanmak kalır.",
     image: {
         src: styleGuideImage,
         alt: "Featured image"
     },
     buttons: [
         {
-            text: "Explore Style Guide",
+            text: "Broşürümüzü İnceleyin",
             link: "/style-guide",
             variant: "primary" as const
         }
@@ -80,28 +80,28 @@ const styleGuideSection = {
 
 const sideBySideStats = {
     eyebrow: "Stats",
-    title: "Built for Speed and Flexibility",
-    description: "Titan Core is designed with performance and developer experience in mind. Our lightweight theme gives you all the essentials without the bloat, letting you build exactly what you need with impressive speed.",
+    title: "Rakam Konuşur.",
+    description: "Bizi daha iyi tanımanız için bazı rakamlar.",
     variant: 'side-by-side' as const,
     stats: statsLists.withContent.stats,
     content: {
-        title: "Built for Speed and Flexibility",
-        description: "Titan Core is designed with performance and developer experience in mind. Our lightweight theme gives you all the essentials without the bloat, letting you build exactly what you need with impressive speed.",
+        title: "Rakam Konuşur.",
+        description: "Bizi daha iyi tanımanız için bazı rakamlar.",
         button: {
-            text: "Discover Titan Core",
-            link: "/theme-info",
+            text: "Emlak Yükle",
+            link: "/contact",
             variant: "primary" as const
         }
     }
 };
 
 const mainCta = {
-    eyebrow: "Build Blocks",
-    title: "Ready-to-Use Components",
-    description: "Save development time with our pre-built, accessible components. Each one is designed to integrate seamlessly with your projects while maintaining excellent performance.",
+    eyebrow: "Ekibimiz",
+    title: "Uzman Danışmalarımızla Tanışın",
+    description: "Genç ama tecrübeli, hızlı ve bilgili danışmanlarımızdan dilediğinize ulaşın ve daha fazla bilgi alın.",
     button: {
-        text: "View All Components",
-        link: "/components",
+        text: "Danışmalarımız",
+        link: "/team",
         variant: "primary" as const,
         target: "_self" as const
     }
@@ -109,23 +109,23 @@ const mainCta = {
 
 
 const logosSection = {
-    eyebrow: "Our Clients",
+    eyebrow: "Referanslarımız",
     logos: logoLists.main.logos
 }
 
 const faqsSection = {
-    eyebrow: "FAQs",
-    title: 'Frequently Asked Questions',
-    description: 'Find answers to common questions about our platform and services.',
+    eyebrow: "SSS",
+    title: 'Sıkça Sorulan Sorular',
+    description: 'Burada yanıtını bulamadığınız soruları bize sormaktan çekinmeyin.',
     faqs: faqLists.main.faqs
 }
 
 const recentPostsSection = {
-    eyebrow: "LATEST INSIGHTS",
-    title: " Learn From Our Experience",
-    description: "Explore our latest articles on Astro JS development, theme customization tips, and web performance best practices.",
+    eyebrow: "BİZDEN",
+    title: "Son Yazılar",
+    description: "Araştırmalarımız, Yazılarımız ve Trend Raporlarımız.",
     button: {
-            text: "View All Posts",
+            text: "Tümünü Görüntüle",
             link: "/blog",
         variant: "primary" as const
     }
