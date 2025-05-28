@@ -1,10 +1,10 @@
 // src/data/menu.ts
 
 export const headerMenu = [
-    { name: 'Theme Info', link: '/theme-info' },
-    { name: 'Our Team', link: '/team' },
+    { name: 'Nedir?', link: '/theme-info' },
+    { name: 'Ekibimiz', link: '/team' },
     { name: 'Blog', link: '/blog' },
-    { name: 'Style-Guide', link: '/style-guide', showArrow: false,
+    { name: 'Yatırımcı Olun', link: '/style-guide', showArrow: false,
         children: [
             { name: 'Typography', link: '/style-guide#typography' },
             { name: 'Colors', link: '/style-guide#colors' },
