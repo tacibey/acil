@@ -1,24 +1,25 @@
 import {
-    Zap, // Bu ikonu kullanmıyoruz ama orijinal dosyada olduğu için bırakıldı.
-    Shield, // Bu ikonu kullanmıyoruz ama orijinal dosyada olduğu için bırakıldı.
-    Heart, // Bu ikonu kullanmıyoruz ama orijinal dosyada olduğu için bırakıldı.
-    Coffee, // Bu ikonu kullanmıyoruz ama orijinal dosyada olduğu için bırakıldı.
-    Smile, // Bu ikonu kullanmıyoruz ama orijinal dosyada olduğu için bırakıldı.
-    Type, // Bu ikonu kullanmıyoruz ama orijinal dosyada olduğu için bırakıldı.
-    TabletSmartphone, // Bu ikonu kullanmıyoruz ama orijinal dosyada olduğu için bırakıldı.
-    CodeXml, // Bu ikonu kullanmıyoruz ama orijinal dosyada olduğu için bırakıldı.
+    // Orijinalde olup kullanılmayan ikonlar (varsa)
+    Zap,
+    Shield,
+    Heart,
+    Coffee,
+    Smile,
+    Type,
+    TabletSmartphone,
+    CodeXml,
 
-    // Yeni eklenen ikonlar
+    // Yeni eklenen ve kullanılan ikonlar
     ChartLine,        // Hızlı Değerleme
     CalendarCheck,    // 21 Gün Garanti
     Handshake,        // Uzman Danışmanlar
-    Checklist,        // Sıfır Stres
+    ClipboardCheck,   // Sıfır Stres (Checklist yerine bu kullanıldı)
     TrendingUp,       // Yüksek Kazanç
-    Info,             // Şeffaf Süreç (Lucide'da "InfoCircle" yerine genellikle "Info" kullanılır)
+    Info,             // Şeffaf Süreç
 } from 'lucide-astro';
 
 // Define the LucideIcon type based on the structure of Lucide icons
-type LucideIcon = typeof Zap; // Buradaki "Zap" sadece tip tanımı içindir, herhangi bir Lucide ikonu olabilir.
+type LucideIcon = typeof Zap; // Bu tip tanımı için herhangi bir Lucide ikonu kullanılabilir.
 
 export interface Feature {
     icon: LucideIcon;
@@ -52,7 +53,7 @@ export const featureLists: Record<string, FeatureList> = {
                 description: 'Alanında yetkin, güvenilir destek.'
             },
             {
-                icon: Checklist,
+                icon: ClipboardCheck, // Burası Checklist'ten ClipboardCheck olarak değiştirildi.
                 title: 'Sıfır Stres',
                 description: 'Evrak ve süreç takibi bize ait.'
             },
@@ -68,7 +69,6 @@ export const featureLists: Record<string, FeatureList> = {
             }
         ]
     },
-    // Orijinal features.ts dosyasındaki secondary listesi değişmeden bırakıldı.
     secondary: {
         id: 'secondary',
         features: [
